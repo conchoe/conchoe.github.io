@@ -120,9 +120,9 @@
     }
 
     // On index: home, about, projects, contact.
-    var sectionIdToNav = { about: 'about', projects: 'projects', skills: 'projects', contact: 'contact' };
+    var sectionIdToNav = { about: 'about', experience: 'experience', projects: 'projects', skills: 'projects', contact: 'contact' };
     var aboutEl = document.getElementById('about');
-    var sections = ['about', 'projects', 'skills', 'contact']
+    var sections = ['about', 'experience', 'projects', 'skills', 'contact']
       .map(function (id) { return document.getElementById(id); })
       .filter(Boolean);
 

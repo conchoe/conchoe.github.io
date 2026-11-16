@@ -36,6 +36,7 @@
                 <li><a href="#" data-section="home">Home</a></li>
                 <li><a href="about.html" data-section="about">About</a></li>
                 <li><a href="today.html" data-section="today">Today I...</a></li>
+                <li><a href="#experience" data-section="experience">Experience</a></li>
                 <li><a href="#projects" data-section="projects">Projects</a></li>
                 <li><a href="#contact" data-section="contact">Contact</a></li>
             </ul>
@@ -55,8 +56,45 @@
             </p>
         </section>
 
+        <section id="experience" aria-labelledby="experience-heading">
+            <h2 id="experience-heading">Experience</h2>
+
+            <article>
+                <h3>Research Assistant &mdash; Modeling Scientific Research</h3>
+                <p class="experience-meta">Carnegie Mellon University, Department of Philosophy &middot; Pittsburgh, PA &middot; Sep. 2026 &ndash; Present</p>
+                <p>Building the data and simulation infrastructure for an NSF-funded agent-based model of how scientific research progresses.</p>
+                <ul>
+                    <li>Built a Python/pandas pipeline that turns 35,984 journal articles into per-author, per-year features, with ID deduplication and validation that fails loudly on bad data.</li>
+                    <li>Made the simulation data-driven: seeded it with a real 28K-concept co-occurrence network, sampled agent behavior and population from real author data, and regression-tested the refactor across 2,000 nodes.</li>
+                    <li>Restructuring the simulation into a config-driven architecture with pluggable strategy modules so researchers can test competing theories on shared code.</li>
+                </ul>
+            </article>
+
+            <article>
+                <h3>Business Analyst Intern</h3>
+                <p class="experience-meta">Pittsburgh Hispanic Development Corporation &middot; Pittsburgh, PA &middot; Jun. 2026 &ndash; Aug. 2026</p>
+                <ul>
+                    <li>Developed Python workflows to clean, transform, and analyze CRM and financial data from hundreds of small businesses, creating reusable pipelines for business analytics.</li>
+                    <li>Analyzed entrepreneur engagement and profit-and-loss data with pandas to identify operational trends, cost drivers, and opportunities for improved business support.</li>
+                    <li>Presented data-driven analyses on engagement and financial performance to the team, translating technical findings into actionable recommendations.</li>
+                </ul>
+            </article>
+        </section>
+
         <section id="projects" aria-labelledby="projects-heading">
             <h2 id="projects-heading">Projects</h2>
+
+            <article>
+                <a href="https://github.com/conchoe/gpt2-ioi-circuits-/blob/main/writeup.md" class="project-title-link" target="_blank" rel="noopener noreferrer">
+                <h3>Mechanistic Interpretability: GPT-2 Circuit Discovery</h3></a>
+                <p>An independent interpretability project replicating and extending a published circuit-analysis result (Wang et al., 2022) on GPT-2 small's Indirect Object Identification (IOI) task using TransformerLens.</p>
+                <ul>
+                    <li>Discovered a previously undocumented competing circuit: ablating the known name-mover heads causes a systematic fallback to a distinct pronoun-associated set of heads.</li>
+                    <li>Built an ablation pipeline over 250+ sentence variants (verbs, objects, and name pairs), finding that verb type predicts whether backup circuits successfully recover the behavior.</li>
+                    <li>Diagnosed and fixed a tokenization bug that was corrupting attention-weight lookups, and validated findings against random-ablation controls to rule out confounds.</li>
+                </ul>
+                <a href="https://github.com/conchoe/gpt2-ioi-circuits-" class="github-link" rel="noopener noreferrer">View on GitHub</a>
+            </article>
 
             <article>
                 <h3>LiftNote</h3>

@@ -317,7 +317,8 @@ nav a.active {
 /* ============================================
    PROJECT CARDS
    ============================================ */
-#projects {
+#projects,
+#experience {
   display: grid;
   grid-template-columns: 1fr;
   gap: var(--spacing-lg);
@@ -925,4 +926,11 @@ html.loading-skip #loading-overlay {
 
 .demo-results strong {
   color: var(--accent); /* Bar names in white */
+}
+
+/* Experience entries: employer, location and dates line */
+.experience-meta {
+  margin-top: 0;
+  color: var(--text-secondary);
+  font-style: italic;
 }
